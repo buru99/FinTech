@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #020041;
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    gap: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+
+}
+
+.logo>img {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+}
+
+.titulo {
+    font-family: 'Roboto';
+    font-size: xx-large;
+    color: #F5F6F8;
+}
+
+.texto {
+    font-family: 'Roboto';
+    font-size: x-large;
+    color: #F5F6F8;
+    text-align: justify;
+}
+
+.contact {
+    display: flex;
+    padding: 10px;
+}
+
+.contact>a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: x-large;
+    color: #05C7F2;
+    transition: transform 0.5 ease;
+}
+
+.contact>a:hover {
+    color: #F5F6F8;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        display: none;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0px;
+    }
+
+    main {
+        width: 95%;
+        padding: 5px;
+        padding-top: 15px;
+    }
+
+    .texto {
+        font-size: 18px;
+    }
+
+    .titulo {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .ficons {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+        background-color: #020041;
+    }
+
+    .contact {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .ficons {
+        display: none;
+    }
+
+    main {
+        width: 80%;
+        padding: 5px;
+        padding-top: 15px;
+    }
+}
