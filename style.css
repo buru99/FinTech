@@ -76,7 +76,7 @@ main {
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 1080px) {
     header {
         display: none;
     }
@@ -115,7 +115,7 @@ main {
     }
 }
 
-@media screen and (min-width: 500px) {
+@media (min-width: 500px) {
     .ficons {
         display: none;
     }
